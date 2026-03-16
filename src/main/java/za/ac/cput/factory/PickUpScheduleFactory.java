@@ -1,4 +1,4 @@
-package za.ac.cput.domain.factory;
+package za.ac.cput.factory;
 
 public class PickUpScheduleFactory {
 }
