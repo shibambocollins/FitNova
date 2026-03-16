@@ -19,16 +19,16 @@ public class Notifications {
         this.userID = builder.userID;
     }
 
-    public int getNotificationID() {
-        return notificationID;
+    public int getNotificationsID() {
+        return notificationsID;
     }
 
     public String getMessage() {
         return message;
     }
 
-    public String getNotificationType() {
-        return notificationType;
+    public String getNotificationsType() {
+        return notificationsType;
     }
 
     public LocalDateTime getDateSent() {
@@ -41,15 +41,15 @@ public class Notifications {
 
     public static class Builder {
 
-        private int notificationID;
+        private int notificationsID;
         private String message;
-        private String notificationType;
+        private String notificationsType;
         private LocalDateTime dateSent;
         private String status;
         private int userID;
 
-        public Builder setNotificationID(int notificationID) {
-            this.notificationID = notificationID;
+        public Builder setNotificationsID(int notificationsID) {
+            this.notificationsID = notificationsID;
             return this;
         }
 
@@ -58,8 +58,8 @@ public class Notifications {
             return this;
         }
 
-        public Builder setNotificationType(String notificationType) {
-            this.notificationType = notificationType;
+        public Builder setNotificationsType(String notificationsType) {
+            this.notificationsType = notificationsType;
             return this;
         }
 
@@ -78,8 +78,8 @@ public class Notifications {
             return this;
         }
 
-        public Notification build() {
-            return new Notification(this);
+        public Notifications build() {
+            return new Notifications(this);
         }
     }
 }
