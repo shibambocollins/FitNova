@@ -52,6 +52,18 @@ public class Booking {
         return slot;
     }
 
+    @Override
+    public String toString() {
+        return "Booking{" +
+                "bookingId='" + bookingId + '\'' +
+                ", bookingDateTime=" + bookingDateTime +
+                ", status=" + status +
+                ", member=" + member +
+                ", trainer=" + trainer +
+                ", slot=" + slot +
+                '}';
+    }
+
     public static class Builder {
         private String bookingId;
         private LocalDateTime bookingDateTime;
