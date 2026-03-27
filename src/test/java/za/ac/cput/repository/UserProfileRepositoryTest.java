@@ -109,23 +109,23 @@ class UserProfileRepositoryTest {
 
     @Test
     void testReadAll_NotNull() {
-        assertNotNull(repo.findAll());
+        assertNotNull(repo.getAll());
     }
 
     @Test
     void testReadAll_ContainsBothProfiles() {
         repo.create(profile1);
         repo.create(profile2);
-        List<UserProfile> all = repo.findAll();
+        List<UserProfile> all = repo.getAll();
         assertTrue(all.stream().anyMatch(p -> p.getProfileId().equals("P001")));
         assertTrue(all.stream().anyMatch(p -> p.getProfileId().equals("P002")));
     }
 
     @Test
     void testReadAll_SizeIncreasesAfterCreate() {
-        int sizeBefore = repo.findAll().size();
+        int sizeBefore = repo.getAll().size();
         repo.create(profile1);
-        assertEquals(sizeBefore + 1, repo.findAll().size());
+        assertEquals(sizeBefore + 1, repo.getAll().size());
     }
 
 
@@ -209,8 +209,8 @@ class UserProfileRepositoryTest {
     void testDelete_SizeDecreasesAfterDelete() {
         repo.create(profile1);
         repo.create(profile2);
-        int sizeBefore = repo.findAll().size();
+        int sizeBefore = repo.getAll().size();
         repo.delete("P001");
-        assertEquals(sizeBefore - 1, repo.findAll().size());
+        assertEquals(sizeBefore - 1, repo.getAll().size());
     }
 }
