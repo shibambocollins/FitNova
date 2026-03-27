@@ -17,11 +17,9 @@ public class AvailabilitySlot {
 
     private AvailabilitySlot() {}
 
-<<<<<<< master
-    private AvailabilitySlot(Builder builder) {
-=======
+
     public AvailabilitySlot(Builder builder) {
->>>>>>> master
+
         this.slotId = builder.slotId;
         this.date = builder.date;
         this.startTime = builder.startTime;
@@ -110,8 +108,7 @@ public class AvailabilitySlot {
                 ", status=" + status +
                 '}';
     }
-<<<<<<< master
+
+
 }
-=======
-}
->>>>>>> master
+
