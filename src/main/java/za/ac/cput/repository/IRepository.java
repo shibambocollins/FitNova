@@ -1,4 +1,6 @@
 package za.ac.cput.repository;
 
-public interface IRepository<U, S> {
+public interface IRepository<T, ID> {
+
+
 }
