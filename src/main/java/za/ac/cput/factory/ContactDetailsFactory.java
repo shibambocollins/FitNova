@@ -2,7 +2,7 @@ package za.ac.cput.factory;
 
 import za.ac.cput.entity.ContactDetails;
 
-import za.ac.cput.util.helper;
+import za.ac.cput.util.Helper;
 
 /*
 ContactDetails.java
@@ -20,10 +20,10 @@ public class ContactDetailsFactory {
             String emergencyContactName) {
 
 
-        if (helper.isNullOrEmpty(contactId) ||
-                helper.isNullOrEmpty(cellphoneNumber) ||
-                helper.isNullOrEmpty(emergencyContactNumber) ||
-                helper.isNullOrEmpty(emergencyContactName)) {
+        if (Helper.isNullOrEmpty(contactId) ||
+                Helper.isNullOrEmpty(cellphoneNumber) ||
+                Helper.isNullOrEmpty(emergencyContactNumber) ||
+                Helper.isNullOrEmpty(emergencyContactName)) {
 
             System.out.println("Invalid input: No field can be null or empty.");
             return null;

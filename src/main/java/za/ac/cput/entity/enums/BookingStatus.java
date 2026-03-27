@@ -1,8 +1,9 @@
 package za.ac.cput.entity.enums;
 
-/*
-* Author: Collins Shibambo (230093183)
-* */
+/* BookingStatus.enum
+Author: Collins Shibambo (230093183)
+Date: 25 March 2026
+*/
 
 public enum BookingStatus {
     ACTIVE,

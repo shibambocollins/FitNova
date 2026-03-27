@@ -7,23 +7,23 @@ package za.ac.cput.factory;
  * (240971051)
  */
 import za.ac.cput.entity.UserProfile;
-import za.ac.cput.util.helper;
+import za.ac.cput.util.Helper;
 
 import java.time.LocalDate;
 
 public class UserProfileFactory {
-    public static UserProfile CreateUserProfile(String memberId,
+    public static UserProfile CreateUserProfile(String profileId,
                                                 String firstName,
                                                 String lastName, String gender, LocalDate dateOfBirth) {
-        if (helper.isNullOrEmpty(memberId))
+        if (Helper.isNullOrEmpty(profileId))
             throw new IllegalArgumentException("memberId required");
-        if (helper.isNullOrEmpty(firstName))
+        if (Helper.isNullOrEmpty(firstName))
             throw new IllegalArgumentException("firstName required");
-        if (helper.isNullOrEmpty(lastName))
+        if (Helper.isNullOrEmpty(lastName))
             throw new IllegalArgumentException("lastName required");
-        if (helper.isNullOrEmpty(gender))
+        if (Helper.isNullOrEmpty(gender))
             throw new IllegalArgumentException("gender required");
-        return new UserProfile.Builder().memberId(memberId).firstName(firstName).
+        return new UserProfile.Builder().profileId(profileId).firstName(firstName).
                 lastName(lastName).gender(gender).dateOfBirth(dateOfBirth).build();
 
 

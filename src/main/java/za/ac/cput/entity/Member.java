@@ -13,7 +13,7 @@ private UserAccount account;
 private UserProfile profile;
 private ContactDetails contact;
 
-private Member(Builder builder) {
+public Member(Builder builder) {
     this.memberId = builder.memberId;
     this.account = builder.account;
     this.profile = builder.profile;

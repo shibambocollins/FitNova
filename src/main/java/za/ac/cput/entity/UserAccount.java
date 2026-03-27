@@ -27,43 +27,43 @@ public class UserAccount
      }
 
     public String getAccountId() {
-        return accountId;
+         return accountId;
     }
 
     public void setAccountId(String accountId) {
-        this.accountId = accountId;
+         this.accountId = accountId;
     }
 
     public String getEmail() {
-        return email;
+         return email;
     }
 
     public void setEmail(String email) {
-        this.email = email;
+         this.email = email;
     }
 
     public String getPassword() {
-        return password;
+         return password;
     }
 
     public void setPassword(String password) {
-        this.password = password;
+         this.password = password;
     }
 
     public RoleType getRole() {
-        return role;
+         return role;
     }
 
     public void setRole(RoleType role) {
-        this.role = role;
+         this.role = role;
     }
 
     public LocalDate getRegistrationDate() {
-        return registrationDate;
+         return registrationDate;
     }
 
     public void setRegistrationDate(LocalDate registrationDate) {
-        this.registrationDate = registrationDate;
+         this.registrationDate = registrationDate;
     }
 
     public static class Builder {
@@ -109,11 +109,7 @@ public class UserAccount
         }
 
         public UserAccount build(){
-
             return new UserAccount(this);
         }
-
-
-
     }
 }

@@ -3,9 +3,10 @@ package za.ac.cput.entity;
 import za.ac.cput.entity.enums.BookingStatus;
 import java.time.LocalDateTime;
 
-/*
-* Author: Collins Shibambo (230093183)
-* */
+/* Booking.java
+Author: Collins Shibambo (230093183)
+Date: 25 March 2026
+*/
 public class Booking {
 
     private String bookingId;
