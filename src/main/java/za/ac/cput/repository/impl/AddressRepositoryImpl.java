@@ -48,6 +48,21 @@ public class AddressRepositoryImpl implements AddressRepository {
     }
 
     @Override
+    public Address save(Address address) {
+        return null;
+    }
+
+    @Override
+    public Address findById(String s) {
+        return null;
+    }
+
+    @Override
+    public List<Address> findAll() {
+        return List.of();
+    }
+
+    @Override
     public Address update(Address address) {
         if (address == null || address.getAddressId() == null) {
             return null;

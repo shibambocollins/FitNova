@@ -42,6 +42,21 @@ public class MemberRepositoryImpl implements MemberRepository {
     }
 
     @Override
+    public Member save(Member member) {
+        return null;
+    }
+
+    @Override
+    public Member findById(String s) {
+        return null;
+    }
+
+    @Override
+    public List<Member> findAll() {
+        return List.of();
+    }
+
+    @Override
     public Member update(Member member) {
         if (membersMap.containsKey(member.getMemberId())) {
             membersMap.put(member.getMemberId(), member);

@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface UserAccountRepository extends IRepository<UserAccount,String> {
 
+    List<UserAccount> getAll();
 }

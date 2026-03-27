@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface TrainerRepository extends IRepository<Trainer,String> {
 
+    List<Trainer> getAll();
 }

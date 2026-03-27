@@ -42,6 +42,21 @@ public class TrainerRepositoryImpl implements TrainerRepository {
     }
 
     @Override
+    public Trainer save(Trainer trainer) {
+        return null;
+    }
+
+    @Override
+    public Trainer findById(String s) {
+        return null;
+    }
+
+    @Override
+    public List<Trainer> findAll() {
+        return List.of();
+    }
+
+    @Override
     public Trainer update(Trainer trainer) {
         if (trainersMap.containsKey(trainer.getTrainerId())) {
             trainersMap.put(trainer.getTrainerId(), trainer);

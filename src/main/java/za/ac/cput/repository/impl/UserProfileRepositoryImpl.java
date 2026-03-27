@@ -50,6 +50,11 @@ public class UserProfileRepositoryImpl implements UserProfileRepository {
     }
 
     @Override
+    public List<UserProfile> findAll() {
+        return List.of();
+    }
+
+    @Override
     public UserProfile update(UserProfile userProfile) {
         if (userProfileMap.containsKey(userProfile.getProfileId())) {
             userProfileMap.put(userProfile.getProfileId(), userProfile);

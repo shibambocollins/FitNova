@@ -12,4 +12,5 @@ import java.util.List;
 
 public interface AddressRepository extends IRepository<Address, String> {
 
+    List<Address> getAll();
 }

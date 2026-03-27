@@ -55,6 +55,11 @@ public class UserAccountRepositoryImpl implements UserAccountRepository {
     }
 
     @Override
+    public List<UserAccount> findAll() {
+        return List.of();
+    }
+
+    @Override
     public boolean delete(String id) {
          return userAccountMap.remove(id) != null;
     }

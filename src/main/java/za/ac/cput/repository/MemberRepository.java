@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface MemberRepository extends IRepository<Member,String> {
 
+    List<Member> getAll();
 }

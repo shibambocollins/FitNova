@@ -44,6 +44,21 @@ public class BookingRepositoryImpl implements BookingRepository {
     }
 
     @Override
+    public Booking save(Booking booking) {
+        return null;
+    }
+
+    @Override
+    public Booking findById(String s) {
+        return null;
+    }
+
+    @Override
+    public List<Booking> findAll() {
+        return List.of();
+    }
+
+    @Override
     public Booking update(Booking booking) {
         if (booking == null || booking.getBookingId() == null) {
             return null;
